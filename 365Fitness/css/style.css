@@ -1,0 +1,467 @@
+
+html,body{
+        margin: 0%;
+        padding: 0%;
+        border: 0%;
+}
+body {
+    text-decoration: aqua;
+    font-size: xx-large;
+    color: blueviolet;
+    background-color: rgb(255, 217, 0);   
+}
+main {
+        background-color: rgb(255, 217, 0);
+        margin-top: 100px;
+}
+@media screen and (max-width: 600px) {
+        body {
+            font-size: medium; 
+        }
+    
+        main {
+            margin-top: 50px; 
+        }
+    }
+header{background-color: black;   /*vrch stránky*/
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100px;           
+    top: 0%;                    
+    left: 0%;
+    gap: 0px;      
+    justify-content: center;
+    }
+.navbar{  /*vzhlad odkazov*/
+   text-decoration: solid;
+   padding: 0 25px ; 
+                      }   /*vzdialenost odkazov od seba*/ 
+
+.navbar a, a:visited { 
+        color: rgb(142, 144, 146);
+        text-decoration: none;
+        font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+        text-transform: uppercase;
+        text-rendering: optimizeLegibility;
+        color: #565555;
+        background-color: #171616;
+        text-shadow: 
+          -1px -1px 1px #2c2b2b, 
+          2px 2px 1px #373737;
+}                      
+.navbar a:hover{
+        background-color: rgb(71, 70, 70);
+        border-radius: 5px;
+        color: rgb(244, 244, 27);
+        font-size: 35px;                         /*pozadie odkazov*/
+        transition: all .4s ease;
+        
+}
+        
+.fotka{
+       position: absolute;
+       left: 0.1%;
+       height: 100%;      /*pozícia fotky v navigation bar*/
+       width: 9%;}    
+    
+
+.navbar-a { 
+    text-decoration: line-through;
+    padding: 50px;
+}       
+@media (max-width: 768px) {                             /* responsive */
+        .navbar {
+            padding: 0 9px; 
+        }
+    
+        .navbar a {
+            font-size: 14px; 
+        }
+    }
+    
+    .fotka2 {
+        width: 100%;
+        height: auto; 
+    }
+    
+    .banner {
+        position: relative;
+        z-index: -2;
+    }
+    
+    .text {
+        position: absolute;
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%, -50%); 
+        z-index: 1;
+        text-align: center;
+        color: rgb(241, 241, 63);
+        text-shadow: 2px 2px 2px rgb(10, 8, 8), 3px 3px 3px rgb(7, 6, 6);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    h1 {
+        margin-top: 1%;
+        text-shadow: 2px 2px 2px rgb(10, 8, 8), 3px 3px 3px rgb(7, 6, 6);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: overline;
+    }
+    
+    
+    @media only screen and (max-width: 768px) {              /* responsive */
+        .text {
+            font-size: 8px; 
+        }
+    }
+.footer-dark {                                                             /*tu začina footer*/
+        padding:50px 0;
+        color: yellow;
+        background-color:#000000;
+      }
+      
+.footer-dark h3 {
+        margin-top:0;
+        margin-bottom:12px;
+        font-weight:bold;
+        font-size:16px;
+      }
+      
+.footer-dark ul  {
+        padding:0;
+        list-style:none;  
+        font-size:14px;
+        margin-bottom:1;
+        color: rgb(122, 125, 124);
+        opacity:1.4;
+        
+}
+.footer-dark ul p {
+        line-height:0.9;
+        color: rgb(122, 125, 124);
+} 
+
+
+.footer-dark ul a {
+        line-height:1.6;
+        color:inherit;
+        text-decoration:none;        
+      }
+      
+.footer-dark ul a:hover {
+        opacity:0.8;
+      }
+      
+@media (max-width:767px) {
+.footer-dark .item:not(.social) {
+          text-align:center;
+          padding-bottom:20px;
+        }
+      }
+      
+.footer-dark .item.text {
+        margin-bottom:36px;
+      }
+      
+@media (max-width:767px) {
+.footer-dark .item.text {
+          margin-bottom:0;
+        }
+      }
+      
+.footer-dark .item.text p {
+        
+        margin-bottom:0;
+      }
+      
+.footer-dark .item.social {
+        text-align:center;
+      }
+      
+@media (max-width:991px) {
+.footer-dark .item.social {
+          text-align:center;
+          margin-top:20px;
+        }
+      }
+      
+.footer-dark .item.social > a {
+        font-size:20px;
+        width:36px;
+        height:36px;
+        line-height:36px;
+        display:inline-block;
+        text-align:center;
+        border-radius:50%;
+        box-shadow:0 0 0 1px yellow;
+        margin:0 8px;
+        color:yellow;
+        opacity:0.75;
+      }
+      
+.footer-dark .item.social > a:hover {
+        opacity:0.9;
+      }
+      
+.obsahf {
+        display: flex;
+}
+.footer-dark .copyright {
+        text-align:center;
+        padding-top:24px;
+        opacity:0.7;
+        font-size:13px;
+        margin-bottom:0;
+        color: rgb(122, 125, 124);                                     
+}
+.autor{
+        text-align:center;
+        padding-top:24px;
+        opacity:0.7;
+        font-size:13px;
+        margin-bottom:0;
+        color: rgb(122, 125, 124);
+}
+.Kontakt{
+        margin-left: 5%;
+}
+.dotaznik{
+          margin-left: 50%;
+}                                                                         
+.sssou{
+        font-size: 15px;
+}
+.meno{
+        font-size: 18px;
+margin-top: 1mm;
+
+}
+.email{
+        font-size: 18px;
+        margin-top: 1mm;
+}
+.poznamka{
+        font-size: 18px;
+}
+@media screen and (max-width: 600px) {          /* responsive */
+        body {
+            font-size: medium;
+        }
+    
+        main {
+            margin-top: 50px;
+        }
+    
+        .dotaznik {
+            margin-left: 0; 
+        }
+    
+        .meno, .email, .poznamka {
+            font-size: 16px; 
+        }
+    }
+
+
+
+
+
+/*tu konči footer*/
+
+.obsah {                                                             /* obsah + galeria */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 300px;
+        margin-right: 300px;
+        border: 2px solid rgb(0, 0, 0);;
+        border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+        border-width: 2px;
+        box-shadow: 20px 20px rgba(0,0,0,.15);
+        transition: all .4s ease;
+        background-color: rgb(0, 0, 0);
+        
+}
+.obsah:hover {
+        border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+        box-shadow: 10px 10px rgba(0,0,0,.25);
+      }
+
+
+.obsah2:hover {
+        border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+        box-shadow: 10px 10px rgba(0,0,0,.25);
+      }
+
+.lava-strana{
+        text-align: left;
+        font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+        padding: 80px 25px;
+        text-transform: uppercase;
+        text-rendering: optimizeLegibility;
+        font-size: 25px;     
+        color: #565555;
+        background-color: #171616;
+        letter-spacing: .1em;
+        text-shadow: 
+          -1px -1px 1px #2c2b2b, 
+          2px 2px 1px #373737;
+}
+.prava-strana{
+        text-align: left;
+        font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+        text-transform: uppercase;
+        text-rendering: optimizeLegibility;
+        padding: 80px 50px;
+        font-size: 25px;
+        color: #565555;
+        background-color: #171616;
+        letter-spacing: .1em;
+        text-shadow: 
+          -1px -1px 1px #2c2b2b, 
+          2px 2px 1px #373737;
+        padding-left: 40px;
+
+}
+.txt {
+        display: flex;
+        margin: 1% 2%;
+}     
+.Nadpis1{
+        font-weight: 600;
+        font-size: 35px;
+}
+.Nadpis2{
+        font-weight: 600;
+        font-size: 35px;
+}
+.container2 {
+        display: flex;
+        width: 100%;
+        padding: 4% 2%;
+        box-sizing: border-box;
+        height: 400px;
+        
+}      
+      .box {
+        flex: 1;
+        overflow: hidden;
+        transition: .5s;
+        margin: 0 2%;
+        line-height: 0;
+      }
+      
+      .box > img {
+        width: 200%;
+        height: calc(50% - 10vh);
+        object-fit: cover; 
+        transition: .5s;
+        height: 300px;
+}
+      
+      
+.box:hover { 
+        flex: 1 1 50%;
+}
+.box:hover > img {
+        width: 100%;
+        height: 100%;
+      }
+ 
+.fotky{
+        text-align: center;
+        padding-bottom: 1%;
+}
+@media screen and (max-width: 768px) {            /* responsive */
+        .obsah {
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 20px;
+        }
+    
+        .lava-strana, .prava-strana {
+            padding: 40px 20px;
+        }
+    
+        .Nadpis1, .Nadpis2 {
+            font-size: 25px;
+        }
+    
+        .container2 {
+            flex-direction: column;
+            height: auto;
+        }
+    
+        .box {
+            flex: 1 1 auto;
+            margin: 0 0 20px;
+        }
+    
+        .box > img {
+            width: 100%; 
+            height: auto; 
+        }
+    
+        .fotky {
+            padding-bottom: 5%;
+        }
+    }
+
+.txt2 {                                                /* sluzby na domovskej stranke */
+        display: flex;
+        padding-left: 35px;
+        margin-top: 1mm;
+        font-size: 18px;
+        font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+        text-transform: uppercase;
+        text-rendering: optimizeLegibility;
+        color: #565555;
+        background-color: #171616;
+        text-shadow: 
+          -1px -1px 1px #2c2b2b, 
+          2px 2px 1px #373737;
+}
+
+.obsah2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        margin-left: 300px;
+        margin-right: 300px;
+        border: 2px solid rgb(0, 0, 0);;
+        border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+        border-width: 2px;
+        box-shadow: 20px 20px rgba(0,0,0,.15);
+        transition: all .4s ease;
+        background-color: rgb(0, 0, 0);
+}
+.obsah2 h6 {
+        text-align: center;
+        padding-top: 1mm;
+        margin-bottom: 1mm;
+        font-size: 40px;
+        font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+        text-transform: uppercase;
+        text-rendering: optimizeLegibility;
+        color: #565555;
+        background-color: #171616;
+        text-shadow: 
+          -1px -1px 1px #2c2b2b, 
+          2px 2px 1px #373737;
+}
+@media screen and (max-width: 768px) {             /* responsive */
+        .txt2 {
+            padding-left: 10px;
+            font-size: 14px;
+        }
+    
+        .obsah2 {
+            margin: 10px;
+        }
+    
+        .obsah2 h6 {
+            font-size: 20px;
+        }
+    }
